@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body,html{
+	max-width:100%;
+	height:100%;
+	background:#003377;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	margin:0;
+	font-family:Arial;
+}
+
+
+/**/
+.context-color{
+	color:	#E6E6FA;
+	font-weight:bold;
+	font-size:14px;
+}
+.title-bg{
+	background:rgba(192,192,192,0.3);
+}
+.navbar{
+	width:40%;
+	height:100%;
+	position:fixed;
+	left:0px;
+}
+.navbar>ul{
+	margin:50px 0 0 100px;
+}
+
+.navbar>ul>li{
+	width:auto;
+	height:50px;
+	margin-top:20px;
+	font-size:50px;
+	
+}
+.navbar a{
+	 color:white;
+	font-weight:bold;
+	text-decoration:none;
+	opacity:0.6;
+}
+
+.navbar>ul>li>a:hover{
+	color:#FF0088;
+	opacity:1;
+	transition:0.1s ease;
+}
+.navbar .timeboard{
+	width:300px;
+	height:300px;
+	background:pink;
+	position:relative;
+	margin-left:130px;
+	margin-top:200px;
+	border-radius:50%;
+}
+.navbar .timeboard h1{
+	position:absolute;
+	width:auto;
+	top:100px;
+	left:80px;
+	font-size:60px;
+	color:	#FF0088;
+	font-weight:bold;
+}
+.navbar .play-btn{
+	width:80px;
+	height:80px;
+	background:	#FF0088;
+	position:absolute;
+	border:5px solid #003377;
+	border-radius:50%;
+	cursor:pointer;
+	z-index:0;
+	margin:5px;
+}
+.navbar .outer-border{
+	width:90px;
+	height:90px;
+	border:2px solid 	#FF0088;
+	border-radius:50%;
+	position:absolute;
+	top:-20px;
+	left:95px;
+	z-index:2;
+}
+
+
+.List{
+	width:60%;
+	height:100%;
+	position:fixed;
+	right:0px;
+}
+.container-l{
+	position:relative;
+	margin:20px 0 0 150px;
+}
+
+ .writein{
+	width:300px;
+	height:50px;
+	border:none;
+	background:white;
+	margin-bottom:10px;
+	padding-left:20px;
+	position:relative;
+}
+ input::placeholder{
+	color:#FF1493;
+	font-style:italic;
+	font-weight:bold;
+}
+ .memobtn{
+	position:absolute;
+	background:white;
+	border:none;
+	height:52px;
+	padding-right:5px;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:20px;
+}
+.memobtn:hover{
+	color:#FF1493;
+	transition:0.2s ease;
+}
+.waitToDo{
+	width:340px;
+	height:auto;
+
+}
+.waitToDo>li{
+	height:20px;
+	border-bottom:1px solid grey;
+	margin-top:16px;
+}
+.waitToDo>span>li{
+height:40px;
+}
+.container-l .l-h2{
+	width:340px;
+	height:30px;
+	margin-top:50px;
+}
+.container-l h2{
+	color:white;
+	font-weight:bold;
+	padding-top:10px;
+	padding-left:10px;
+	opacity:1.0;
+}
+.Done-memo{
+	width:340px;
+	height:auto;
+	margin-top:5px;
+}
+.Done-memo>li{
+	height:20px;
+	border-bottom:1px solid grey;
+	margin-top:16px;
+}
+.Done-memo>span>li{
+	height:40px;
+}
+.Done-memo  h1{
+	color:white;
+	font-weight:bold;
+	padding-top:10px;
+	padding-left:10px;
+}
